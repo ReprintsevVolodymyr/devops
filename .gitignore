@@ -5,3 +5,4 @@
 terraform.rc;
 *.tfvars;
 *.tfvars.json;
+*.js;
