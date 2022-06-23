@@ -1,0 +1,9 @@
+**/.terraform/* ;
+*.tfstate;
+*.tfstate.*;
+.terraformrc;
+terraform.rc;
+*.tfvars;
+*.tfvars.json;
+*.js;
+
