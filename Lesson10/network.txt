@@ -1,0 +1,21 @@
+212.100.54.0/24
+
+network 1
+network: 212.100.54.0/26 
+hosts: 212.100.54.1-62
+Broadcast: 212.100.54.63
+
+network 2
+network: 212.100.54.64/26 
+hosts: 212.100.54.65-126
+Broadcast: 212.100.54.127
+
+network 3
+network: 212.100.54.128/26 
+hosts: 212.100.54.129-190
+Broadcast: 212.100.54.191
+
+network 4
+network: 212.100.54.192/26 
+hosts: 212.100.54.193-254
+Broadcast: 212.100.54.255

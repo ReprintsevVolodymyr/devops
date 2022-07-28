@@ -1,0 +1,1 @@
+sudo route add default gw 172.18.16.1 eth0
