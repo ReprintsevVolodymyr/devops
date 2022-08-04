@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+    stages {
+        stage ('Checkout') {
+            steps {
+                git branch: 'development',
+                    url:'https://github.com/ReprintsevVolodymyr/devops.git'
+            }
+        }
+
+        stage ('Start Apache') {
+            steps {
+                dir ('Lesson12') {
+                    sh 'bash start_apache.sh'
+                    sh 'sleep 10'
+                }
+            }
+        }
+
+        stage ('Check status Apache') {
+            steps {
+                dir ('Lesson12') {
+                    sh 'bash check_status.sh'
+                }
+            }
+        }
+
+        stage ('Status Build') {
+            steps {
+                dir ('Lesson12') {
+                    sh 'bash start_apache.sh'
+                }
+            }
+        }
+    }
+}
